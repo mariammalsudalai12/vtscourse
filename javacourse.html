@@ -150,14 +150,162 @@
               </div>
             </div>
           </section>
+          <section id="technical">
+            <div class="accordion-container">
+              <h1 style="color: white;">Java Full Stack Developer Modules</h1>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Frontend Development</span>
+                    <span class="arrow">+</span>
+                  </div>
+                  <div class="accordion-content">
+                    <ul>
+                      <li>HTML, CSS, JavaScript</li>
+                      <li>React.js</li>
+                      <li>Responsive Web Design</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Backend Development</span>
+                    <span class="arrow">+</span>
+                  </div>
+                  <div class="accordion-content">
+                    <ul>
+                      <li>Java</li>
+                      <li>Spring Boot</li>
+                      <li>RESTful APIs</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Database & Cloud</span>
+                    <span class="arrow">+</span>
+                  </div>
+                  <div class="accordion-content">
+                    <ul>
+                      <li>MySQL</li>
+                      <li>MongoDB</li>
+                      <li>AWS Basics</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </section>
 
+          <section id="keyfeatures">
+            <div class="features-container">
+              <h1 style="color: white;">Key Features of Java Full Stack Developer Course</h1>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-code feature-icon"></i>
+                  <h3>Comprehensive Frontend</h3>
+                  <p>Master HTML, CSS, JavaScript, and frameworks like React.js to build interactive UIs.</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-server feature-icon"></i>
+                  <h3>Robust Backend</h3>
+                  <p>Learn Java, Spring Boot, and create powerful REST APIs to handle server-side logic.</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-database feature-icon"></i>
+                  <h3>Database Management</h3>
+                  <p>Get hands-on experience with MySQL and MongoDB for efficient data handling.</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-cloud feature-icon"></i>
+                  <h3>Cloud Integration</h3>
+                  <p>Understand AWS cloud fundamentals to deploy and manage applications seamlessly.</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-cogs feature-icon"></i>
+                  <h3>DevOps Basics</h3>
+                  <p>Learn essential DevOps tools and practices for continuous integration and delivery.</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-project-diagram feature-icon"></i>
+                  <h3>Real-World Projects</h3>
+                  <p>Work on live projects to gain practical experience and build an impressive portfolio.</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <section id="Certificate">
+            <div class="certificate-img"data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+              <h1 class="tech-head" style="color: rgb(10, 10, 94); background-color: white;">Certificate</h1>
+              <div class="paragraph">
+                <img src="images/certificate.00c0bf2d87b1ad3921e4.png">
+              <p class="para">VTS provides you a training completion certificate with an online verification code.
+                <br><br>Once training is complete at VTS, you will receive a guaranteed internship with our own IT organisation Vetri IT Systems Private Limited.</p>
+           </div>
+          </div>
+          </section>
 
-
-
-
+          
       
-       <script src="script.js"></script>
+          
+
+
+
+
+            <script>
+              // JavaScript for Accordion Functionality
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+
+        // Toggle Active Class
+        accordionItem.classList.toggle('active');
+
+        // Close Other Accordions
+        document.querySelectorAll('.accordion-item').forEach(item => {
+            if (item !== accordionItem) {
+                item.classList.remove('active');
+            }
+        });
+    });
+});
+
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const accordionItem = header.parentElement;
+    const content = accordionItem.querySelector('.accordion-content');
+
+    // Collapse other open items
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      if (item !== accordionItem) {
+        item.querySelector('.accordion-content').style.maxHeight = '0';
+        item.querySelector('.accordion-header').classList.remove('active');
+      }
+    });
+
+    // Toggle the current item
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      header.classList.remove('active');
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      header.classList.add('active');
+    }
+  });
+});
+
+
+
+            </script>
+
+        
+         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+          <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>

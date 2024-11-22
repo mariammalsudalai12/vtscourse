@@ -63,7 +63,7 @@ h1::after {
   display: block;
   width: 10%;
   height: 4px;
-  background: linear-gradient(90deg, rgb(10, 10, 94), rgba(0, 0, 0, 0.534));
+  background: linear-gradient(to bottom,rgb(10, 10, 94) , white);
   margin: 10px auto 0; 
   border-radius: 2px;
   transition: width 0.4s ease-in-out;
@@ -249,4 +249,151 @@ p {
     transform: translateY(0);
   }
 }
+
+.accordion-container {
+  font-family: "EB Garamond", serif;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background-color: rgb(10, 10, 94);
+  color: white;
+  font-size: 24px;
+}
+
+/* Accordion Styles */
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .arrow {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.accordion-content ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.accordion-content li {
+  margin: 10px 0;
+  font-size: 20px;
+  color: black;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+/* Grid Styles */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 90px;
+}
+
+.feature-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: rgb(10, 10, 94);
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+}
+
+.paragraph{
+  display: flex;
+  margin: 0px 50px;
+  background-color: rgb(10, 10, 94);
+}
+.para{
+  margin-top: 50px;
+  font-size: 30px;
+  color: white;
+  font-family: "EB Garamond", serif;
+}
+.certificate-img img{
+  width: 600px;
+  height: 500px;
+  margin: 0px 60px 0px 0px;
+}
+
+
+
+
 
